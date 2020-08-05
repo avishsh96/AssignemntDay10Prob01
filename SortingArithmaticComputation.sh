@@ -14,5 +14,7 @@ dictionary[compute2]=$comp2
 dictionary[compute3]=$comp3
 dictionary[compute4]=$comp4
 
-arr=(`printf '%s\n' "${dictionary[@]}" | sort -n`)
-echo ${arr[@]}
+arrDesc=(`printf '%s\n' "${dictionary[@]}" | sort -r`)
+arrAssc=(`printf '%s\n' "${dictionary[@]}" | sort -n`)
+echo "Descending Order: "${arrDesc[@]}
+echo "Ascending Order: "${arrAssc[@]}
