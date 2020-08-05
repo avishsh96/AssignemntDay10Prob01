@@ -5,3 +5,4 @@ read b
 read c
 
 comp1=$((a+b*c))
+comp2=$((a*b+c))
